@@ -1,0 +1,41 @@
+@import '../../../theme/core.scss';
+@import '../../../global.scss';
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: rem(60);
+  border-radius: 70px;
+  text-shadow: none;
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.827);
+  box-shadow: 0px 3px 27px 27px rgba(0, 0, 0, 0.357);
+}
+
+.title {
+  font-size: rem(24);
+  margin-bottom: rem(40);
+}
+
+.submitButton {
+  height: rem(48);
+  margin-bottom: rem(32);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+}
+
+.linkButton {
+  margin-left: rem(4);
+  text-decoration: underline;
+  color: $purple;
+}

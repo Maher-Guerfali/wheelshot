@@ -1,0 +1,18 @@
+//$mainColor: #15023a;
+$mainColor: #f31545;
+$backgroundColor: rgba(240, 234, 234, 0.253);
+$yel: #ebe0d0;
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(../src/fonts/TheMacabre.otf);
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}

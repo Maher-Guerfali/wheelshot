@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  height: 100%;
+  overflow: hidden;
+}
+.dd {
+  display: flex;
+  height: 70%;
+  flex-direction: row;
+}
+#container {
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  //justify-content:space-evenly;
+  transition: 0.2s;
+  perspective: 800px;
+}
+
+#appp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 119px;
+  perspective: 800px;
+  align-items: center;
+  justify-content: center;
+}
+
+#card {
+  position: absolute;
+  width: 50%;
+  height: 30%;
+  border-radius: 10px;
+
+  transform: rotate3d(1, 0, 0, 60deg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+#num {
+  color: rgb(233, 233, 233);
+  font-size: 17px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: monospace;
+}
+
+#expiry {
+  font-size: 13px;
+  color: rgb(233, 233, 233);
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: monospace;
+}
+
+#label {
+  color: rgb(233, 233, 233);
+  font-size: 7px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: monospace;
+}
+
+#cardContent {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(60, 204, 209, 0.185);
+  flex-direction: row;
+  box-shadow: 21px 12px 2px 1px rgba(0, 0, 0, 0.384);
+  position: absolute;
+  // background-image: url("../../../public/assets/room.gif");
+  height: 100%;
+  width: 100%;
+  box-shadow: inset 0 0 1px 1px #00000040;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+#details {
+  position: relative;
+  height: 30%;
+  font-size: 28px;
+  color: rgb(34, 34, 34);
+}
+
+#detail {
+  font-family: Roboto-Regular, HelveticaNeue, Arial, sans-serif;
+  //width: 200px;
+  position: relative;
+  font-size: 24px;
+  /* display: flex; */
+  flex: 1;
+  float: left;
+  padding-left: 42px;
+  padding-top: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#infolabel {
+  font-weight: 100;
+  font-size: 12px;
+  color: #888888;
+  letter-spacing: 1px;
+  flex: 1;
+}
+
+#title {
+  font-family: Roboto-Regular, HelveticaNeue, Arial, sans-serif;
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: rgb(194, 194, 194);
+  font-weight: bold;
+}
+
+#exp {
+  display: flex;
+}

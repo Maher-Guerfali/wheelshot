@@ -1,0 +1,54 @@
+@import '../../global.scss';
+
+.models {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.scroll3d {
+  padding-top: 210px;
+  position: absolute;
+}
+
+.mirror {
+  height: 300px;
+  width: 400px;
+  position: absolute;
+  padding-bottom: 250px;
+  margin-bottom: 320px;
+}
+.itemmodel {
+  display: flex;
+  // padding-top: 30!!!px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+  height: 90%;
+}
+.h11 {
+  position: absolute;
+  //padding-top: 30vh;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px #000000dc;
+  color: rgba(255, 255, 255, 0.637);
+  @include mobile {
+    font-size: 1rem;
+  }
+
+  //background-color: aqua;
+}
+
+.buttons {
+  padding-top: 20vh;
+  position: absolute;
+}
+.images {
+  position: sticky;
+  //width: 10vw;
+  bottom: 36vh;
+  height: 22%;
+  // padding-top: 330px;
+}
